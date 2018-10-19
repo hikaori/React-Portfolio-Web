@@ -1,25 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import twitterImage from './assets/icons/twitter.svg';
+import facebookImage from './assets/icons/facebook.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <div className="Header">
+          <div className="Header-logo">Logo</div>
+          <ul className="Header-nav">
+            <li>About Me</li>
+            <li>About Me</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div className="Content">
+          This is the Content
+        </div>
+        <div className="Footer">
+          <p>Copyright © 2018 </p>
+          <div className="Footer-social">
+            <img src={twitterImage} />
+            <img src={facebookImage} />
+          </div>
+        </div>
       </div>
     );
   }
