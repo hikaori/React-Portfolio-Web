@@ -21,6 +21,7 @@ export default class PortfolioItem extends Component {
   render() {
     const { isHovered  } = this.state;
     const { imageUrl, title, categories } = this.props;
+
     return (
       <div className="PorfolioItem" onMouseOver={this.handleHoverIn} onMouseLeave={this.handleHoverOut}>
         <div className="PortfolioItem-image">
@@ -33,7 +34,14 @@ export default class PortfolioItem extends Component {
         </div>
         <div className="PortfolioItem-details">
           <h3>{title}</h3>
-          <p>{categories}</p>
+          <span>
+            {categories.map((category) => (
+              <span key={category} className="PortfolioItem-category"
+              >
+                {category}
+              </span>
+            ))}
+          </span>
         </div>
       </div>
     )
