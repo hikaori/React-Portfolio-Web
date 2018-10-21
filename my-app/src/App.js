@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import TopPage from './components/TopPage/TopPage.jsx';
-
+import StateExample from './components/Review/StateExample.jsx';
+import ChildrenComponentExample from './components/Review/ChildrenComponentExample.jsx';
 import './App.scss';
 
 class App extends Component {
@@ -12,6 +13,8 @@ class App extends Component {
         <Header />
         <TopPage />
         <Footer />
+        <StateExample />
+        <ChildrenComponentExample />
       </div>
     );
   }
